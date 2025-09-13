@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}About - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="text-center">
+                <div class="profile-placeholder bg-light rounded mx-auto d-flex align-items-center justify-content-center" style="width: 300px; height: 300px;">
+                    <i class="fas fa-user fa-8x text-primary"></i>
+                </div>
+                <h4 class="mt-3">Charisma P Biju</h4>
+                <p class="text-muted">Full Stack Developer</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h1 class="mb-4">About Me</h1>
+            <p class="lead">I'm a passionate full-stack developer with experience in creating web applications that solve real-world problems.</p>
+            
+            <p>With a background in computer science and several years of hands-on experience, I specialize in:</p>
+            <ul class="mb-4">
+                <li>Backend development with Python (Flask, Django)</li>
+                <li>Frontend development with modern JavaScript frameworks</li>
+                <li>Database design and management</li>
+                <li>Responsive web design and user experience</li>
+                <li>API development and integration</li>
+            </ul>
+            
+            <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, reading tech blogs, or enjoying outdoor activities.</p>
+            
+            <div class="mt-4">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary me-3">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="#" class="btn btn-outline-primary" target="_blank">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Experience Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2 class="mb-4">Experience & Education</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Experience</h4>
+                    <div class="timeline-item mb-4">
+                        <h5>Full Stack Developer</h5>
+                        <h6 class="text-muted">Tech Company (2022 - Present)</h6>
+                        <p>Developed multiple web applications, improved system performance, and mentored junior developers.</p>
+                    </div>
+                    <div class="timeline-item mb-4">
+                        <h5>Junior Developer</h5>
+                        <h6 class="text-muted">Startup Inc. (2020 - 2022)</h6>
+                        <p>Built responsive websites and worked on various client projects using modern web technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Education</h4>
+                    <div class="timeline-item mb-4">
+                        <h5>Bachelor's in Computer Science</h5>
+                        <h6 class="text-muted">University Name (2018 - 2022)</h6>
+                        <p>Studied computer science fundamentals, data structures, algorithms, and web development.</p>
+                    </div>
+                    <div class="timeline-item mb-4">
+                        <h5>Web Development Bootcamp</h5>
+                        <h6 class="text-muted">Coding Academy (2020)</h6>
+                        <p>Intensive full-stack web development program covering modern frameworks and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
